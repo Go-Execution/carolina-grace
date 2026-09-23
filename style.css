@@ -139,6 +139,17 @@ img {
     color: var(--white);
 }
 
+.btn-outline-white {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.btn-outline-white:hover {
+    background-color: var(--white);
+    color: var(--primary-green);
+}
+
 .btn-block {
     display: block;
     width: 100%;
