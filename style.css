@@ -417,15 +417,21 @@ img {
     color: var(--secondary-green);
 }
 
+.footer-areas p {
+    color: #a7c5d8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.308);
     padding-top: 20px;
     font-size: 0.9rem;
 }
 
-.footer p,
-.footer-bottom p {
-    color: #ffffff !important;
+.footer-bottom p,
+.footer-logo p {
+    color: #ffffff;
 }
 
 /* Responsive */
