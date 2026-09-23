@@ -384,11 +384,14 @@ img {
 }
 
 .marquee-content {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
     animation: marquee 50s linear infinite;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--primary-blue);
+    width: max-content;
 }
 
 .marquee-content span {
