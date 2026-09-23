@@ -32,7 +32,7 @@ for filename, title, desc, img in pages:
     <!-- Page Hero -->
     <section class="page-hero" style="background-color: var(--primary-blue); color: white; padding: 100px 0; text-align: center;">
         <div class="container">
-            <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-family: var(--font-heading);">{title}</h1>
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-family: var(--font-heading); color: white;">{title}</h1>
             <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: #e0f2f1;">{desc}</p>
         </div>
     </section>
