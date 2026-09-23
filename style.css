@@ -378,15 +378,15 @@ img {
 .marquee-wrapper {
     width: 100%;
     overflow: hidden;
-    white-space: nowrap;
     position: relative;
     padding: 10px 0;
     display: block;
 }
 
 .marquee-content {
-    display: inline-block;
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
     animation: marquee 50s linear infinite;
     font-size: 1.1rem;
     font-weight: 600;
@@ -394,7 +394,8 @@ img {
 }
 
 .marquee-content span {
-    display: inline-block;
+    flex-shrink: 0;
+    white-space: nowrap;
     padding: 0 10px;
 }
 
