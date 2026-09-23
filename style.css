@@ -367,6 +367,48 @@ img {
     border-color: var(--primary-green);
 }
 
+/* Areas Served Marquee */
+.areas-section {
+    padding: 40px 0;
+    background-color: #f9fbfb;
+    overflow: hidden;
+    border-top: 1px solid #eaeaea;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 50s linear infinite;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.marquee-content span {
+    padding: 0 10px;
+}
+
+.marquee-content .dot {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-blue);
