@@ -16,7 +16,14 @@
             <div class="logo">
                 <a href="#"><img src="images/logo.png" alt="Carolina Grace Home Care Logo"></a>
             </div>
-            <nav class="nav">
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav" id="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -33,7 +40,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-image">
-            <img src="images/hero.jpg" alt="Caregiver and senior woman smiling">
+            <img src="images/nurse_patient.jpg" alt="Hispanic nurse and elderly patient">
         </div>
         <div class="hero-content container">
             <div class="hero-text-box">
@@ -237,5 +244,22 @@
             <p>&copy; 2026 Carolina Grace Home Care. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -20,9 +20,11 @@ pages = [
 with open("index.html", "r", encoding="utf-8") as f:
     content = f.read()
 
+# Extract header (up to </header>)
 header_end = content.find("</header>") + 9
 header = content[:header_end]
 
+# Extract footer (from <!-- Areas Served Section --> onwards)
 footer_start = content.find("<!-- Areas Served Section -->")
 footer = content[footer_start:]
 
